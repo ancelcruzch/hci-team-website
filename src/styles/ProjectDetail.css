@@ -1,5 +1,5 @@
 .project-detail {
-  max-width: 90%;
+  width: 80em;
   margin: 2rem auto;
   padding: 20px;
   background-color: #e8f5e9;
@@ -328,15 +328,6 @@ p {
 
 
 
-/* Estilo general para el contenedor de detalles del proyecto */
-.project-detail {
-  font-family: Arial, sans-serif;
-  color: #333;
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
 .project-image {
   width: 100%;
   max-width: 300px;
@@ -435,7 +426,7 @@ p {
 
 /* Contenido del modal */
 .modal-content {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border-radius: 12px;
   padding: 30px;
   max-width: 500px;

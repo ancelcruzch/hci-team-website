@@ -2,21 +2,21 @@
 
 /* General */
 .home {
-  position: relative; /* Permite posicionar el video como fondo */
-  overflow: hidden; /* Oculta el exceso del video si se desborda */
-  height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla */
-  padding: 0; /* Elimina padding innecesario para evitar el espacio entre el navbar y el contenido */
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh; /* Se ajusta al contenido */
+  padding: 0;
 }
 
 /* Estilo del vídeo de fondo */
 #myVideo {
-  position: absolute;
+  position: fixed; /* Fija el vídeo en el fondo mientras haces scroll */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Asegura que el vídeo cubra todo el espacio sin distorsionarse */
-  z-index: -1; /* Coloca el vídeo detrás del contenido */
+  width: 100vw; /* Asegura que cubra el ancho completo */
+  height: 100vh; /* Asegura que cubra la altura completa */
+  object-fit: cover;
+  z-index: -1;
 }
 
 /* Hero Section */

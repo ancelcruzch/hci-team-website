@@ -23,7 +23,7 @@ const Home = () => {
       id: 1,
       name: "Fabrizio Mattos",
       role: "Desarrollador Principal",
-      image: "/assets/images/fabrizio.png"
+      image: "/assets/images/team/fabrizio.png"
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ const Home = () => {
       id: 3,
       name: "Uberto García",
       role: "Diseñador UX/UI",
-      image: "/assets/images/uberto.png"
+      image: "/assets/images/team/uberto.png"
     }
   ];
 
@@ -81,6 +81,9 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      <br />
+      <br />
     </div>
   );
 };
