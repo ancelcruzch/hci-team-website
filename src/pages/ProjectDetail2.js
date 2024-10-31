@@ -4,6 +4,7 @@ import '../styles/ProjectDetail.css';
 import projectEvents2 from '../assets/data/projectEvents2'; // Importa projectEvents2
 import ProjectTimeline from '../components/ProjectTimeline'; // Importa el componente ProjectTimeline
 import GitHubLink from '../components/GitHubLink';
+import PdfButton from '../components/PdfButton';
 
 const ProjectDetail2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,6 +93,9 @@ const ProjectDetail2 = () => {
         </div>
       )}
   
+      <h2>Docuemnto Detallado</h2>
+      <PdfButton />
+
       <br/>
   
       {/* Línea de tiempo del proyecto */}
