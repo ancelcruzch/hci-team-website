@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "title": "Proyecto 1: Mundo Virtual",
+      "description": "Un proyecto de simulación de un mundo virtual en Unreal Engine.",
+      "image": "/assets/images/project1.png",
+      "progress": 75
+    },
+    {
+      "id": 2,
+      "title": "Proyecto 2: Simulación de IA",
+      "description": "Desarrollo de una inteligencia artificial en un entorno simulado.",
+      "image": "/assets/images/project2.png",
+      "progress": 50
+    }
+  ]
+  

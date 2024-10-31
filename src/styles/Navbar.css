@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #2c3e50; /* Mismo color que el footer */
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s ease; /* Solo transición de padding */
+  min-height: 6vh; /* Mantiene un tamaño mínimo */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem; /* Ajusta para separar de la izquierda */
+}
+
+.navbar-logo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-home-icon {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+/* Suaviza el desplazamiento */
+html {
+  scroll-behavior: smooth;
+}
