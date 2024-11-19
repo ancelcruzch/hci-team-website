@@ -6,7 +6,7 @@ const Home = () => {
   const projects = [
     {
       id: 1,
-      title: "Colection Coins",
+      title: "Coins Collection",
       description: "Explora un mundo virtual en Unreal Engine",
       image: "/assets/images/game/logo_game.png"
     },
@@ -14,27 +14,27 @@ const Home = () => {
       id: 2,
       title: "Relatos Culturales",
       description: "Simulación de inteligencia artificial",
-      image: "/assets/images/museum/logo_museum.png"
+      image: "/assets/images/troya/troya_logo.png"
     }
   ];
 
   const teamMembers = [
     {
       id: 1,
-      name: "Fabrizio Mattos",
-      role: "Desarrollador Principal",
+      name: "Fabrizio Miguel Mattos Cahui",
+      role: "Desarrollador Principal y Analista",
       image: "/assets/images/team/fabrizio.png"
     },
     {
       id: 2,
-      name: "Alain Cruz",
-      role: "Ingeniero de Software",
+      name: "Ancel Alain Fernando Cruz Chaiña",
+      role: "Diseñador UX/UI y Desarrollador",
       image: "/assets/images/team/alain.png"
     },
     {
       id: 3,
       name: "Uberto García",
-      role: "Diseñador UX/UI",
+      role: "Diseñador gráfico y Desarrollador",
       image: "/assets/images/team/uberto.png"
     }
   ];

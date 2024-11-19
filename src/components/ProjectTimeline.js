@@ -1,7 +1,6 @@
 // src/components/ProjectTimeline.js
 import React from 'react';
 import TimelineEvent from './TimelineEvent';
-import projectEvents from '../assets/data/projectEvents1'; // Importa los eventos
 
 const ProjectTimeline = ({ events }) => { // Acepta events como prop
   return (

@@ -1,10 +1,11 @@
 // src/components/ProjectDetail2.js
 import React, { useState } from 'react';
-import '../styles/ProjectDetail.css';
-import projectEvents2 from '../assets/data/projectEvents2'; // Importa projectEvents2
-import ProjectTimeline from '../components/ProjectTimeline'; // Importa el componente ProjectTimeline
+import '../styles/ProjectDetail2.css';
+import projectEvents2 from '../assets/data/projectEvents2'; 
+import ProjectTimeline from '../components/ProjectTimeline'; 
 import GitHubLink from '../components/GitHubLink';
 import PdfButton from '../components/PdfButton';
+// import cards from "../../public/assets/data/troya/projectCards"; 
 
 const ProjectDetail2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +59,7 @@ const ProjectDetail2 = () => {
   return (
     <div className="project-detail">
       <img 
-        src="/assets/images/museum/caral.jpg" 
+        src="/assets/images/troya/troya_logo.png" 
         alt="Proyecto 2: Simulación de IA" 
         className="project-image" 
       />
@@ -93,8 +94,9 @@ const ProjectDetail2 = () => {
         </div>
       )}
   
-      <h2>Docuemnto Detallado</h2>
-      <PdfButton />
+      <br></br>
+      <h2>Documento Detallado</h2>
+      <PdfButton pdfUrl="/assets/docs/HCI_Proyecto_Troya.pdf" />
 
       <br/>
   

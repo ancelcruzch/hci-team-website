@@ -4,7 +4,7 @@ import VideoPlayer from '../components/VideoPlayer';
 import ImageCarousel from '../components/ImageCarousel';
 import GitHubLink from '../components/GitHubLink';
 import ProjectTimeline from '../components/ProjectTimeline';
-import '../styles/ProjectDetail.css';
+import '../styles/ProjectDetail1.css';
 import projectEvents1 from '../assets/data/projectEvents1'; // Importa los eventos
 
 const ProjectDetail1 = () => {

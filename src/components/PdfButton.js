@@ -1,11 +1,14 @@
 import React from 'react';
 
-const PdfButton = () => {
-  // URL del PDF (puede ser un archivo alojado en tu servidor o un enlace externo)
-  const pdfUrl = "/assets/docs/HCI_proyecto.pdf"; // Reemplaza esto con la URL real de tu PDF
-
+// Componente PdfButton que recibe la URL del PDF como prop
+const PdfButton = ({ pdfUrl }) => {
+  // Función para abrir el PDF en una nueva pestaña
   const openPdf = () => {
-    window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+    if (pdfUrl) {
+      window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      console.error('URL del PDF no proporcionada');
+    }
   };
 
   return (
