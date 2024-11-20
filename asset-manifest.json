@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.0e0dce2f.css",
-    "main.js": "/static/js/main.6d8796fe.js",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/index.html",
-    "main.0e0dce2f.css.map": "/static/css/main.0e0dce2f.css.map",
-    "main.6d8796fe.js.map": "/static/js/main.6d8796fe.js.map"
+    "main.css": "/hci-team-website/static/css/main.9836cb22.css",
+    "main.js": "/hci-team-website/static/js/main.6d8796fe.js",
+    "static/media/slick.svg": "/hci-team-website/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/hci-team-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/hci-team-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/hci-team-website/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/hci-team-website/index.html",
+    "main.9836cb22.css.map": "/hci-team-website/static/css/main.9836cb22.css.map",
+    "main.6d8796fe.js.map": "/hci-team-website/static/js/main.6d8796fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e0dce2f.css",
+    "static/css/main.9836cb22.css",
     "static/js/main.6d8796fe.js"
   ]
 }
