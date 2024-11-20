@@ -4,7 +4,7 @@ const projectEvents1 = [
     {
       icon: '1',
       title: 'Análisis de Tareas',
-      description: 'En esta etapa inicial, identificamos las necesidades del usuario y desglosamos las tareas clave del proyecto. Este análisis detallado permitirá definir los objetivos específicos y sentar las bases para el diseño de la interfaz y la experiencia de usuario.',
+      description: 'Ennn esta etapa inicial, identificamos las necesidades del usuario y desglosamos las tareas clave del proyecto. Este análisis detallado permitirá definir los objetivos específicos y sentar las bases para el diseño de la interfaz y la experiencia de usuario.',
       date: 'lunes, 09 de septiembre, 2024',
     },
     {
