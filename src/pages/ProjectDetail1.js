@@ -12,7 +12,8 @@ const ProjectDetail1 = () => {
     { src: "/assets/images/game/maqueta1.jpg", alt: "Imagen 1" },
     { src: "/assets/images/game/maqueta2.jpg", alt: "Imagen 2" },
     { src: "/assets/images/game/maqueta3.jpg", alt: "Imagen 3" },
-    { src: "/assets/images/game/maqueta4.jpg", alt: "Imagen 4" }
+    { src: "/assets/images/game/maqueta4.jpg", alt: "Imagen 4" },
+    { src: "/assets/images/game/maqueta5.jpg", alt: "Imagen 5" }
   ];
 
   return (

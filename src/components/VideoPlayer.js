@@ -3,7 +3,7 @@ import React from 'react';
 
 const VideoPlayer = ({ src, title }) => (
   <div className="video-container">
-    <video controls width="100%">
+    <video controls width="80%">
       <source src={src} type="video/mp4" />
       Tu navegador no soporta videos HTML5.
     </video>

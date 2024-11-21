@@ -121,46 +121,48 @@ p {
   z-index: 1000;
   padding: 10px;
 }
-
-.modal-content {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 500px;
-  width: 90%;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  color: #333;
-  animation: fadeIn 0.3s ease-out;
-}
-
-.modal-content h3 {
-  font-size: 1.6rem;
-  color: #1b5e20;
-  margin-bottom: 15px;
-}
-
-.modal-content p {
-  font-size: 1rem;
-  color: #4e342e;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.modal-content button {
-  background-color: #33691e;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.modal-content button:hover {
-  background-color: #1b5e20;
-}
+ /* Contenido del modal */
+  .modal-content {
+    background-color: #ffffff !important;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 0.3s ease-out; /* Animación suave */
+  }
+  
+  .modal-content h3 {
+    font-size: 1.6rem;
+    color: #1b5e20; /* Verde oscuro */
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    font-size: 1rem;
+    color: #4e342e; /* Marrón claro */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    background-color: #33691e; /* Verde medio */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-content button:hover {
+    background-color: #1b5e20; /* Verde oscuro */
+  }
 
 @keyframes fadeIn {
   from {
@@ -172,3 +174,5 @@ p {
     transform: scale(1);
   }
 }
+
+
