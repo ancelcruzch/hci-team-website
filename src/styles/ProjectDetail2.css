@@ -1,542 +1,174 @@
 .project-detail {
-    width: 80em;
-    margin: 2rem auto;
-    padding: 20px;
-    background-color: #e8f5e9;
-    color: #1b5e20;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80em;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  max-width: 30%; /* Limita el ancho máximo al 30% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto 1.5rem; /* Centra la imagen horizontalmente */
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  color: #34495e;
+  text-align: center;
+}
+
+p {
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+  max-width: 800px;
+  color: #555;
+}
+
+.project-detail-line {
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  width: calc(33.333% - 20px);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #33691e;
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #4e342e;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+  flex-grow: 1;
+}
+
+.card button {
+  background-color: #33691e;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.card button:hover {
+  background-color: #1b5e20;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
   }
-  
-  /* Imagen principal del proyecto */
-  .project-image, .carousel-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-image {
-    margin-bottom: 1.5rem;
-  }
-  
-  .carousel-container{
-    margin: 15px;
-  }
-  
-  .carousel-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Títulos */
-  h2 {
-    font-size: 2rem;
-    margin: 1.5rem 0;
-    color: #34495e;
-  }
-  
-  /* Estilos para el párrafo */
-  p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 1.5rem auto;
-  }
-  
-  /* Carrusel y flechas de navegación */
-  .slick-slide {
-    padding: 0 15px;
-  }
-  
-  .slick-dots li button:before {
-    font-size: 10px;
-    color: #2980b9;
-  }
-  
-  .slick-dots li.slick-active button:before {
-    color: #e74c3c;
-  }
-  
-  .slick-prev:before, .slick-next:before {
-    color: #2980b9;
-  }
-  
-  .slick-prev:hover:before, .slick-next:hover:before {
-    color: #e74c3c;
-  }
-  
-  /* Enlace a GitHub */
-  .github-link {
-    margin-top: 2rem;
-  }
-  
-  .github-link a {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: #2c3e50;
-    font-size: 1.25rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .github-link a:hover {
-    color: #e74c3c;
-    transform: scale(1.05);
-  }
-  
-  .github-link svg {
-    margin-right: 0.5rem;
-  }
-  
-  /* Gestalt Principles */
-  .project-detail > p {
-    line-height: 1.6;
-  }
-  
-  .carousel-image, .github-link a {
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  /* Línea separadora */
-  .project-detail-line {
+}
+
+@media (max-width: 480px) {
+  .card {
     width: 100%;
-    height: 2px;
-    background-color: #000;
-    margin: 20px 0;
   }
-  
-  /* Descripción */
-  .description {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content h3 {
+  font-size: 1.6rem;
+  color: #1b5e20;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #4e342e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background-color: #33691e;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #1b5e20;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
   }
-  
-  .description > p {
-    flex: 1;
-    padding: 0 20px;
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  /* Timeline */
-  .timeline {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1.5rem;
-  }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    top: 75px;
-    bottom: 215px; 
-    left: 32px;
-    width: 4px;
-    background: repeating-linear-gradient(
-      180deg,
-      #66bb6a, /* Verde claro */
-      #66bb6a 10px,
-      transparent 10px,
-      transparent 15px
-    );
-    animation: flow 3s linear infinite;
-  }
-  
-  @keyframes flow {
-    0% { background-position: 0% 0%; }
-    100% { background-position: 0% 100%; }
-  }
-  
-  .timeline-event {
-    position: relative;
-    margin: 3rem 0;
-    padding-left: 3.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .timeline-event:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .timeline-icon {
-    position: absolute;
-    left: -18px;
-    top: 0;
-    font-size: 1.8rem;
-    background-color: #43a047; /* Verde oscuro */
-    color: #ffffff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
-  }
-  .timeline-icon:hover {
-    transform: scale(1.3);
-    background-color: #3498db;
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
-  }
-  
-  .timeline-content {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .timeline-content:hover {
-    background-color: #f3faff;
-    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.1);
-  }
-  
-  .timeline-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-  }
-  
-  .timeline-status {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-    color: #34495e;
-  }
-  
-  .timeline-description {
-    font-size: 1rem;
-    color: #555555;
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-  }
-  
-  .timeline-date {
-    font-size: 0.9rem;
-    color: #999999;
-    margin-top: 0.5rem;
-    font-style: italic;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* ---------------------------------------------------------------------------------- */
-  /* Sección de tarjetas (cards) */
-  .card-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-  .card {
-    background-color: #e8f5e9; /* Fondo verde claro */
-    color: #1b5e20; /* Texto verde oscuro */
-    width: calc(33.333% - 20px); /* Ajuste para tres tarjetas por fila con espacio entre ellas */
-    min-height: 250px; /* Altura mínima para asegurar uniformidad */
-    display: flex;
-    flex-direction: column; /* Distribución vertical */
-    align-items: center; /* Centra contenido horizontalmente */
-    justify-content: space-between; /* Espacio entre título, contenido y botón */
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    color: #33691e; /* Verde medio */
-    margin: 0.5rem 0; /* Espaciado controlado */
-  }
-  
-  .card p {
-    font-size: 1rem;
-    color: #4e342e; /* Marrón claro */
-    line-height: 1.4;
-    flex-grow: 1; /* El párrafo ocupa espacio adicional para mantener la simetría */
-    margin: 0.5rem 0;
-  }
-  
-  .card button {
-    background-color: #33691e; /* Verde medio */
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem; /* Asegura separación desde el contenido principal */
-  }
-  
-  .card button:hover {
-    background-color: #1b5e20; /* Verde oscuro */
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Responsividad para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas pequeñas */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      width: 100%; /* Una tarjeta por fila en pantallas muy pequeñas */
-    }
-  }
-  
-  
-  .video-container {
-    width: 850px; /* Ancho fijo del contenedor */
-    margin: 0 auto; /* Centrado horizontal */
-    padding: 10px;
-    background-color: #f0f0f0; /* Fondo claro */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .video-container video {
-    width: 100%; /* Video ocupa todo el ancho del contenedor */
-    height: auto; /* Mantiene la relación de aspecto */
-    border-radius: 5px;
-  }
-  
-  
-  
-  .project-image {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 20px auto;
-  }
-  
-  .project-detail h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #1e5a7c;
-  }
-  
-  .description p {
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #555;
-  }
-  
-  .project-detail-line {
-    height: 1px;
-    background-color: #ccc;
-    margin: 20px 0;
-  }
-  
-  /* Sección de tarjetas */
-  .card-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-  .card {
-    background-color: #e8f5e9;
-    color: #1b5e20;
-    width: calc(33.333% - 20px);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    color: #33691e;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Responsividad para pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      width: 100%;
-    }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* Modal y overlay */
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
-    backdrop-filter: blur(5px); /* Desenfoque en el fondo */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    padding: 10px; /* Espacio para evitar recortes en pantallas pequeñas */
-  }
-  
-  /* Contenido del modal */
-  .modal-content {
-    background-color: #ffffff !important;
-    border-radius: 12px;
-    padding: 30px;
-    max-width: 500px;
-    width: 90%;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: #333;
-    position: relative;
-    z-index: 2;
-    animation: fadeIn 0.3s ease-out; /* Animación suave */
-  }
-  
-  .modal-content h3 {
-    font-size: 1.6rem;
-    color: #1b5e20; /* Verde oscuro */
-    margin-bottom: 15px;
-  }
-  
-  .modal-content p {
-    font-size: 1rem;
-    color: #4e342e; /* Marrón claro */
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  .modal-content button {
-    background-color: #33691e; /* Verde medio */
-    color: #fff;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .modal-content button:hover {
-    background-color: #1b5e20; /* Verde oscuro */
-  }
-  
-  /* Tarjetas */
-  .card {
-    background-color: #e8f5e9;
-    color: #1b5e20;
-    width: calc(33.333% - 20px);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    color: #1b5e20;
-    margin-bottom: 8px;
-  }
-  
-  .card p {
-    font-size: 0.9rem;
-    color: #4e342e;
-    line-height: 1.4;
-    margin-bottom: 10px;
-  }
-  
-  .card button {
-    background-color: #33691e;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card button:hover {
-    background-color: #1b5e20;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Animación del modal */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  /* Responsividad para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      width: 100%;
-    }
-  
-    .modal-content {
-      padding: 20px;
-    }
-  }
+}

@@ -23,7 +23,7 @@ const styles = {
   button: {
     padding: '10px 20px',
     fontSize: '16px',
-    backgroundColor: '#007bff',
+    backgroundColor: '#1b5e20',
     color: '#fff',
     border: 'none',
     borderRadius: '5px',

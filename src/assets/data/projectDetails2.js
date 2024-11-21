@@ -1,8 +1,4 @@
 
-
-
-
-
 const detailsCards = [
     { 
       title: "Introducción", 
