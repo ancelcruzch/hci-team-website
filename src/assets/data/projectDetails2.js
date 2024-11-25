@@ -2,7 +2,7 @@
 const detailsCards = [
     { 
       title: "Introducción", 
-      info: "Exploraaaa cómo la realidad virtual redefine la enseñanza de la historiaaaa.",
+      info: "Explora cómo la realidad virtual redefine la enseñanza de la historia.",
       detail: "Esteee proyecto recrea la Guerra de Troya con tecnologías de realidad virtual, permitiendo a los usuarios experimentar eventos cruciales desde una perspectiva inmersiva. Utiliza Unreal Engine y cascos Meta Quest 2 para generar entornos visualmente detallados y una sensación de realismo que fomenta la empatía y reflexión sobre las decisiones de los antiguos héroes."
     },
     { 
