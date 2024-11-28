@@ -16,28 +16,46 @@ const ProjectDetail1 = () => {
     { src: "/assets/images/game/maqueta5.jpg", alt: "Imagen 5" }
   ];
 
+  const images2 = [
+    { src: "/assets/images/game/blender1.jpg", alt: "Imagen 1" },
+    { src: "/assets/images/game/blender2.jpg", alt: "Imagen 2" },
+    { src: "/assets/images/game/blender3.jpg", alt: "Imagen 3" },
+    { src: "/assets/images/game/blender4.jpg", alt: "Imagen 4" },
+    { src: "/assets/images/game/blender5.jpg", alt: "Imagen 5" },
+  ];
+
   return (
     <div className="project-detail">
-      <img src="/assets/images/game/logo_game.png" alt="Proyecto 1: Simulación de IA" className="project-image" />
-
-      <h2>Colección de Monedas en Moto 3D VR</h2>
-      <p>
+      <img 
+        src="/assets/images/game/logo_game.png" 
+        alt="Proyecto 1: Simulación de IA" 
+        className="project-image" 
+        style={{ marginBottom: "1cm" }} 
+      />
+  
+      <h2 style={{ marginBottom: "1cm" }}>Colección de Monedas en Moto 3D VR</h2>
+      <p style={{ marginBottom: "1cm" }}>
         Este proyecto es una emocionante simulación en realidad virtual en la que el jugador controla una moto en un entorno tridimensional.
         El objetivo principal es coleccionar monedas dispersas a lo largo del recorrido. Cada moneda recolectada otorga tiempo extra.
       </p>
-
-      <h2>Maqueta y Evaluación</h2>
-      <ImageCarousel images={images} />
-
-      <h2>Cronología de Implementación</h2>
-      <ProjectTimeline events={projectEvents1} />
-
-      <h2>Video del Juego</h2>
-      <VideoPlayer src="/assets/videos/gameplay.mp4" title="Demostración del Juego" />
-
-      <GitHubLink repoUrl="https://github.com/UbertoGC/Kidnapping-Protocol" />
+  
+      <h2 style={{ marginBottom: "1cm" }}>Prototipo de baja Fidelidad</h2>
+      <ImageCarousel images={images} style={{ marginBottom: "2cm" }} />
+  
+      <h2 style={{ marginBottom: "1cm" }}>Cronología de Implementación</h2>
+      <ProjectTimeline events={projectEvents1} style={{ marginBottom: "1cm" }} />
+  
+      <h2 style={{ marginBottom: "1cm" }}>Modelos en Blender</h2>
+      <ImageCarousel images={images2} style={{ marginBottom: "1cm" }} />
+      <br></br>
+  
+      <h2 style={{ marginBottom: "1cm" }}>Video del Juego</h2>
+      <VideoPlayer src="/assets/videos/gameplay.mp4" title="Demostración del Juego" style={{ marginBottom: "1cm" }} />
+  
+      <GitHubLink repoUrl="https://github.com/UbertoGC/Kidnapping-Protocol" style={{ marginBottom: "1cm" }} />
     </div>
   );
+  
 };
 
 export default ProjectDetail1;

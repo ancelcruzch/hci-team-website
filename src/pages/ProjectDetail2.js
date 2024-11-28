@@ -5,6 +5,7 @@ import projectEvents2 from '../assets/data/projectEvents2';
 import ProjectTimeline from '../components/ProjectTimeline'; 
 import GitHubLink from '../components/GitHubLink';
 import PdfButton from '../components/PdfButton';
+import ImageCarousel from '../components/ImageCarousel';
 import detailsCards from "../assets/data/projectDetails2"; 
 import VideoPlayer from '../components/VideoPlayer';
 
@@ -62,18 +63,24 @@ const ProjectDetail2 = () => {
   
       <br></br>
       <PdfButton pdfUrl="/assets/docs/HCI_Proyecto_Troya.pdf" />
-
-      <br/>
   
-      {/* Línea de tiempo del proyecto */}
-      <h2>Etapas de Implementación</h2>
-      <ProjectTimeline events={projectEvents2} /> {/* Pasa los eventos como prop */}
-
-
       <h2>Video de las necesidades</h2>
       <div>
       <VideoPlayer src="/assets/videos/necesidades.mp4" title="" autoPlay loop />
       </div>
+
+      <h2 style={{ marginBottom: "1cm" }}>Story Board</h2>
+      <img 
+        src="/assets/images/troya/story_board.jpg" 
+        alt="Story Board" 
+        style={{ marginBottom: "1cm", width: "80%" }} />
+      <br />
+
+
+
+      {/* Línea de tiempo del proyecto */}
+      <h2>Etapas de Implementación</h2>
+      <ProjectTimeline events={projectEvents2} /> {/* Pasa los eventos como prop */}
 
       <GitHubLink repoUrl="https://github.com/UbertoGC/Kidnapping-Protocol" />
 

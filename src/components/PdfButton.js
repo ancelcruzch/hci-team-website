@@ -5,7 +5,6 @@ const pdfData = [
   { title: 'Propuesta Mejorada', url: '/assets/docs/propuesta.pdf' },
   { title: 'Entrevistas', url: '/assets/docs/entrevista.pdf' },
   { title: 'Needfinding', url: '/assets/docs/needfinding.pdf' },
-  { title: 'StoryBoard', url: '/assets/docs/guion.pdf' },
   { title: 'Necesidades', url: '/assets/docs/detalles_necesidades.pdf' },
 ];
 
