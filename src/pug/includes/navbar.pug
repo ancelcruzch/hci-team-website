@@ -1,0 +1,30 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-4 
+    .container.px-5
+        a.navbar-brand(href='index.html')
+            span.fw-bolder.text-primary Human Interaction Computer
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto.mb-2.mb-lg-0.small.fw-bolder
+                li.nav-item
+                    a.nav-link(href='index.html') Home
+                li.nav-item
+                    a.nav-link(href='resume.html') Resume
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href='#', id='navbarDropdownProjects', role='button', data-bs-toggle='dropdown', aria-expanded='false') Projects
+                    ul.dropdown-menu(aria-labelledby='navbarDropdownProjects')
+                        li
+                            a.dropdown-item(href='video-game.html') Videogame
+                        li
+                            a.dropdown-item(href='troyan-war.html') Troya
+                li.nav-item
+                    a.nav-link(href='notifications.html')
+                        i.bi.bi-bell 
+
+// Breadcrumbs debajo del navbar
+nav.aria-label.breadcrumb.bg-light.py-2
+    .container.px-5
+        ol.breadcrumb.mb-0
+            li.breadcrumb-item
+                a(href='index.html') Home
+            li.breadcrumb-item.active(aria-current='page') Current Page

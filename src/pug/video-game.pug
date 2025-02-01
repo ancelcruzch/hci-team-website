@@ -1,0 +1,68 @@
+extends layout
+
+block content
+    .container.py-5
+        // Logo del juego
+        .text-center.mb-5
+            img(src='/assets/images/game/logo_game.png', alt='Proyecto 1: Simulación de IA', style='margin-bottom: 1cm; width: 300px;')
+
+        // Título principal
+        h2.text-center.fw-bold.mb-4.text-gradient Colección de Monedas en Moto 3D VR
+
+        p.text-muted.mb-5.text-description
+            | Este proyecto es una emocionante simulación en realidad virtual en la que el jugador controla una moto en un entorno tridimensional. 
+            | El objetivo principal es coleccionar monedas dispersas a lo largo del recorrido. Cada moneda recolectada otorga tiempo extra.
+
+        // Prototipo de baja fidelidad
+        h3.fw-bold.mb-3.text-center.text-gradient Prototipo de Baja Fidelidad
+        .container.mb-5
+            .row.g-4.justify-content-center
+                each val, i in [1, 2, 3, 4]
+                    .col-3
+                        .card.shadow-lg.border-0.card-prototype
+                            img.card-img-top.rounded-3(src=`/assets/images/game/maqueta${val}.jpg`, alt=`Imagen ${val}`)
+                            .card-body.text-center
+                                h5.card-title.mb-0.text-gradient Imagen #{val}
+
+
+        // Cronología de Implementación (Diseño Estilo Tarjetas)
+        h3.fw-bold.mb-4.text-secondary.text-center Cronología de Implementación
+        .container
+            each event in projectEvents
+                .card.shadow.border-0.rounded-4.mb-5
+                    .card-body.p-5
+                        .row.align-items-center.gx-5
+                            // Icono y Fecha
+                            .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                .bg-light.p-4.rounded-4
+                                    .text-secondary.fw-bolder.mb-2 #{event.date}
+                                    .mb-2
+                                        .small.fw-bolder #{event.icon}. #{event.title}
+                            // Descripción del evento
+                            .col-lg-8
+                                p.mb-0 #{event.description}
+
+
+        // Prototipo de baja fidelidad
+        h3.fw-bold.mb-3.text-center.text-gradient Modelos en Blender
+        .container.mb-5
+            // Carrusel de imágenes
+            .carousel.slide(data-bs-ride="carousel", id="carouselExample")
+                .carousel-inner
+                    each group, i in [[1, 2, 3, 4], [5, 6]]
+                        .carousel-item(class=i === 0 ? 'active' : '')
+                            .row.g-4.justify-content-center
+                                each val in group
+                                    .col-3
+                                        .card.shadow-lg.border-0.card-prototype
+                                            img.card-img-top.rounded-3(src=`/assets/images/game/blender${val}.jpg`, alt=`Imagen ${val}`)
+                                            .card-body.text-center
+                                                h5.card-title.mb-0.text-gradient Imagen #{val}
+
+                // Controles del carrusel
+                button.carousel-control-prev(type="button", data-bs-target="#carouselExample", data-bs-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.visually-hidden Anterior
+                button.carousel-control-next(type="button", data-bs-target="#carouselExample", data-bs-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.visually-hidden Siguiente

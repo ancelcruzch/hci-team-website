@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Modern Business - Start Bootstrap Template
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Projects Section
+            section.py-5
+                .container.px-5.mb-5
+                    .text-center.mb-5
+                        h1.display-5.fw-bolder.mb-0
+                            span.text-gradient.d-inline Projects
+                    .row.gx-5.justify-content-center
+
+                        .col-lg-11.col-xl-9.col-xxl-8
+
+                            // Project Card 1: Colección de Monedas en una Moto
+                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5
+                                            h2.fw-bolder Colección de Monedas en una Moto
+                                            p.text-muted
+                                                | Este emocionante videojuego combina la habilidad y estrategia del jugador al controlar una moto en un entorno 3D mientras colecciona monedas. Cada moneda otorga tiempo extra, aumentando el desafío de mantener el equilibrio entre velocidad y precisión.
+                                            a.btn.btn-primary.mt-3(href="video-game.html") Ver Proyecto
+                                        img.img-fluid(src='/assets/images/game/logo_game.png', alt='Colección de Monedas')
+
+                            // Project Card 2: Troya: El Camino de Aquiles
+                            .card.overflow-hidden.shadow.rounded-4.border-0
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5
+                                            h2.fw-bolder Troya: El Camino de Aquiles
+                                            p.text-muted
+                                                | Una experiencia educativa inmersiva que permite a los jugadores vivir momentos icónicos de la Guerra de Troya. Utilizando realidad virtual, este proyecto combina narrativa histórica con mecánicas interactivas para fomentar la empatía y el aprendizaje.
+                                            a.btn.btn-primary.mt-3(href="troyan-war.html") Ver Proyecto
+                                        img.img-fluid(src='/assets/images/troya/logo_troya.png', alt='Troya: El Camino de Aquiles')
+
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

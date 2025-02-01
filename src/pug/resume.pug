@@ -1,0 +1,76 @@
+doctype html
+html(lang='es')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Información del Curso - Plantilla de Inicio Bootstrap
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navegación
+            include includes/navbar.pug
+
+            // Contenido de la Página
+            .container.px-5.my-5
+                .text-center.mb-5
+                    h1.display-5.fw-bolder.mb-0
+                        span.text-gradient.d-inline Resumen del Curso
+                .row.gx-5.justify-content-center
+
+                    .col-lg-11.col-xl-9.col-xxl-8
+
+                        // Sección de Introducción
+                        section
+                            .d-flex.align-items-center.justify-content-between.mb-4
+                                h2.text-primary.fw-bolder.mb-0 Unreal Engine
+
+                            // Tarjeta de Introducción
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Desarrollo con Unreal Engine
+                                                .small.fw-bolder Proyectos 3D Interactivos
+                                                .small.text-muted Creación de entornos virtuales
+                                        .col-lg-8
+                                            div Este curso ofrece una introducción a Unreal Engine y su aplicación en el desarrollo de proyectos 3D. Aprenderás a diseñar entornos inmersivos, integrar elementos interactivos y trabajar con herramientas avanzadas para crear experiencias virtuales impactantes.
+
+                        // Sección de Temas
+                        section
+                            h2.text-secondary.fw-bolder.mb-4 Diseño Web
+                            // Tarjeta de Temas
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                     .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-secondary.fw-bolder.mb-2 Diseño de Páginas Web
+                                                .mb-2
+                                                    .small.fw-bolder Aplicación de Patrones de Diseño
+                                                    .small.text-muted Responsive Design y Accesibilidad
+                                                .fst-italic
+                                                    .small.text-muted Optimización y Rendimiento
+                                                    .small.text-muted Uso de Frameworks Modernos
+                                        .col-lg-8
+                                            div Profundiza en la creación de páginas web dinámicas y funcionales aplicando patrones de diseño reconocidos. Explora técnicas avanzadas para mejorar la experiencia del usuario y asegura la optimización del rendimiento con buenas prácticas.
+
+                        // Separador
+                        .pb-5
+
+        // Pie de Página
+        include includes/footer.pug
+
+        include includes/scripts.pug

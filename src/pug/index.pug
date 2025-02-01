@@ -1,0 +1,101 @@
+// src/pug/index.pug
+doctype html
+html(lang='en')
+
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title HCI
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Header
+            header.py-5
+                .container.px-5.pb-5
+                    .row.gx-5.align-items-center
+                        .col-xxl-5
+                            // Header text content
+                            .text-center.text-xxl-start
+                                .badge.bg-gradient-primary-to-secondary.text-white.mb-4
+                                    .text-uppercase Usabilidad &middot; Diseño de Interfaces &middot; Experiencia de Usuario
+                                .fs-3.fw-light.text-muted Mejorar la interacción entre
+                                h1.display-3.fw-bolder.mb-5
+                                    span.text-gradient.d-inline Humanos y Computadoras de manera eficiente
+                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
+                                    a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='resume.html') Objetivos del Curso
+                                    a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Proyectos Destacados
+                        .col-xxl-7
+                            // Header profile picture
+                            .d-flex.justify-content-center.mt-5.mt-xxl-0
+                                .profile.bg-gradient-primary-to-secondary
+                                    img.profile-img(src='assets/profile.png', alt='Interacción Humano-Computador')
+                                    .dots-1
+                                        include includes/svg-dots.pug
+                                    .dots-2
+                                        include includes/svg-dots.pug
+                                    .dots-3
+                                        include includes/svg-dots.pug
+                                    .dots-4
+                                        include includes/svg-dots.pug
+
+
+            // Team            
+            section#team.page-section.team-section
+                .container
+                    .text-center
+                        h2.section-heading.text-uppercase Equipo de Desarrollo
+                        h3.section-subheading.text-muted Diseño de interfaces
+                    .row
+                        .col-lg-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
+                                h4 Alain Cruz
+                                p.text-muted Lead Designer
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Alain Cruz Twitter Profile')
+                                    i.fab.fa-twitter
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Alain Cruz Facebook Profile')
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Alain Cruz LinkedIn Profile')
+                                    i.fab.fa-linkedin-in
+                        .col-lg-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
+                                h4 Fabrizio Mattos
+                                p.text-muted Lead Marketer
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Fabrizio Mattos Twitter Profile')
+                                    i.fab.fa-twitter
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Fabrizio Mattos Facebook Profile')
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Fabrizio Mattos LinkedIn Profile')
+                                    i.fab.fa-linkedin-in
+                        .col-lg-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
+                                h4 Uberto Garcia
+                                p.text-muted Lead Developer
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Uberto Garcia Twitter Profile')
+                                    i.fab.fa-twitter
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Uberto Garcia Facebook Profile')
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-social.mx-2(href='#!', aria-label='Uberto Garcia LinkedIn Profile')
+                                    i.fab.fa-linkedin-in
+                    .row
+                        .col-lg-8.mx-auto.text-center
+                            p.large.text-muted
+
+        // Footer
+        include includes/footer.pug
+        include includes/scripts.pug
